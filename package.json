@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-profiiot",
+  "version": "1.0.0",
+  "description": "Redux-like state management for node-red by the ProFi research project.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [ "node-red" ],
+    "node-red"     : {
+        "nodes": {
+            "Reducer": "Reducer/Reducer.js",
+			"RootReducer": "RootReducer/RootReducer.js",
+			"ActionCreator": "ActionCreator/ActionCreator.js"
+        }
+    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doemski/node-red-contrib-profiiot.git"
+  },
+  "author": "Dominick Madden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doemski/node-red-contrib-profiiot/issues"
+  },
+  "homepage": "https://github.com/doemski/node-red-contrib-profiiot#readme"
+}

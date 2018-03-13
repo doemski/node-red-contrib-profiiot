@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ActionCreator',{
+        category: 'ProFi',
+        color: '#ffaadd',
+        defaults: {
+            name: {value:"ActionCreator"},
+            actionType: {value:""},
+            dataSource: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"ActionCreator";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ActionCreator">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row node-text-editor-row">
+      <label for="node-input-actionType"><i class="fa fa-star"></i> Type</label>
+      <input type="text" id="node-input-actionType" placeholder="TYPE">
+    </div>
+
+    <div class="form-row node-text-editor-row">
+      <label for="node-input-dataSource"><i class="fa fa-database"></i> Data Source</label>
+      <input type="text" id="node-input-dataSource" placeholder="Data Source">
+    </div>
+</script>
+ 
+<script type="text/x-red" data-help-name="ActionCreator">
+    <p>Node that receives an event and outputs an action.
+    <br/><br/></br/>
+      {
+        "type": "ACTION_NAME",
+        "data": 123
+      }<br/>
+
+    </p>
+</script>
