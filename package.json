@@ -1,26 +1,32 @@
 {
-  "name": "node-red-contrib-profiiot",
-  "version": "1.0.0",
-  "description": "Redux-like state management for node-red by the ProFi research project.",
+  "name": "node-red-contrib-reducere",
+  "version": "0.0.1",
+  "description": "Redux-like state management for Node-RED",
   "main": "index.js",
   "scripts": {
   },
-  "keywords": [ "node-red" ],
-    "node-red"     : {
-        "nodes": {
-            "Reducer": "Reducer/Reducer.js",
-			"RootReducer": "RootReducer/RootReducer.js",
-			"ActionCreator": "ActionCreator/ActionCreator.js"
-        }
+  "keywords": [
+    "node-red",
+    "redux",
+    "state",
+    "state management",
+    "state container"
+  ],
+  "node-red": {
+    "nodes": {
+      "Reducer": "Reducer/Reducer.js",
+	    "RootReducer": "RootReducer/RootReducer.js",
+	    "ActionCreator": "ActionCreator/ActionCreator.js"
     }
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doemski/node-red-contrib-profiiot.git"
+    "url": "git+https://github.com/doemski/node-red-contrib-reducere.git"
   },
   "author": "Dominick Madden",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/doemski/node-red-contrib-profiiot/issues"
+    "url": "https://github.com/doemski/node-red-contrib-reducere/issues"
   },
-  "homepage": "https://github.com/doemski/node-red-contrib-profiiot#readme"
+  "homepage": "https://github.com/doemski/node-red-contrib-reducere#readme"
 }
