@@ -12,7 +12,7 @@ module.exports = function(RED){
             msg.action = action;
         } else {
           if (msg[config.dataSource] === undefined) {
-            node.error('Message did not contain field specified in Data Source field');
+            node.error('Message object did not contain field specified in Data Source field');
           } else {
             action[config.dataSource] = msg[config.dataSource];
             msg.action = action;
