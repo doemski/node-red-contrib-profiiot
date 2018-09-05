@@ -88,21 +88,20 @@ Possible initial state of a reducer:
 Possible reducer function:
 ```js
 const reduce = (state, action) => {
-	switch (action.type) {
-		case 'INIT':
-			return state;
-		case 'LIGHTSWITCH_ACTIVATED':
+  switch (action.type) {
+    case 'INIT':
+      return state;
+    case 'LIGHTSWITCH_ACTIVATED':
       const newLightSwitchStatus = action.status;
 
       const updatedState = {
         ...state,
         status: "on"
       }
-	    return updatedState;
-
-		default:
-			return state;
-	}
+      return updatedState;
+    default:
+      return state;
+  }
 }
 ```
 
