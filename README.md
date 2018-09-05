@@ -10,7 +10,7 @@ This is an early but usable version which has been used for keeping a consistent
 
 ## Installation
 
-This assumes you have Node-RED already installed and working, if you need to install node-red see [here](http://nodered.org/docs/getting-started/installation).
+This assumes you have Node-RED already installed and working, if you need to install Node-RED see [here](http://nodered.org/docs/getting-started/installation).
 
 Navigate to your Node-RED user directory:
 
