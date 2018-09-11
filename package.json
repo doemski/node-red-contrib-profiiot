@@ -14,9 +14,9 @@
   ],
   "node-red": {
     "nodes": {
-      "Reducer": "Reducer/Reducer.js",
-	    "RootReducer": "RootReducer/RootReducer.js",
-	    "ActionCreator": "ActionCreator/ActionCreator.js"
+      "Reducer": "nodes/Reducer/Reducer.js",
+	    "RootReducer": "nodes/RootReducer/RootReducer.js",
+	    "ActionCreator": "nodes/ActionCreator/ActionCreator.js"
     }
   },
   "repository": {
