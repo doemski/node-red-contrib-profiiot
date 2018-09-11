@@ -96,7 +96,7 @@ const reduce = (state, action) => {
 
       const updatedState = {
         ...state,
-        status: "on"
+        status: newLightSwitchStatus
       }
       return updatedState;
     default:
