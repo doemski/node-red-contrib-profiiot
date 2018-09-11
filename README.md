@@ -1,5 +1,7 @@
 # Node Red Contribution: Reducere State Management
 
+[![Build Status](https://travis-ci.org/doemski/node-red-contrib-reducere.svg?branch=master)](https://travis-ci.org/doemski/node-red-contrib-reducere)
+
 A State Management solution for [Node-RED](https://nodered.org/) heavily inspired by the popular JavaScript state container library [Redux](https://redux.js.org/). Just like in Redux, one consistent ('Single source of truth') application state is maintained in form of a JSON object.
 
 This project was developed within the context of the [ProFi](http://prototyping4innovation.de/) research project funded by the German [Federal Ministry of Education and Research](https://www.bmbf.de/).
