@@ -1,9 +1,12 @@
 {
   "name": "node-red-contrib-reducere",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Redux-like state management for Node-RED",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "node-red",
@@ -12,21 +15,32 @@
     "state management",
     "state container"
   ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "node-red": {
     "nodes": {
       "Reducer": "nodes/Reducer/Reducer.js",
-	    "RootReducer": "nodes/RootReducer/RootReducer.js",
-	    "ActionCreator": "nodes/ActionCreator/ActionCreator.js"
+      "RootReducer": "nodes/RootReducer/RootReducer.js",
+      "ActionCreator": "nodes/ActionCreator/ActionCreator.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doemski/node-red-contrib-reducere.git"
+    "url": "https://github.com/doemski/node-red-contrib-reducere.git"
   },
   "author": "Dominick Madden",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/doemski/node-red-contrib-reducere/issues"
   },
-  "homepage": "https://github.com/doemski/node-red-contrib-reducere#readme"
+  "homepage": "https://github.com/doemski/node-red-contrib-reducere#readme",
+  "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.9.14",
+    "travis-deploy-once": "^5.0.7"
+  }
 }
