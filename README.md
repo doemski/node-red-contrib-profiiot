@@ -80,6 +80,8 @@ Output action:
 ### Reducer
 A node that takes an action and a current substate and returns a new substate.
 
+**Note**: It is recommended to have an ActionCreator which creates an initialization action ('INIT') at the start of the application. This way the Reducer can return the initial substate it is responsible for.
+
 #### Example
 Possible initial state of a reducer:
 ```js
