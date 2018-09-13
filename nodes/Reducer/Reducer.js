@@ -56,6 +56,11 @@ module.exports = function(RED) {
                           "const newState = reduce(substate, action);"+
                           "msg.substateName = \"" + this.substateName + "\";"+
                           "msg.substate = newState;"+
+
+			  "global.state = Object.assign({},"+
+				"global.state,"+
+				"{" + this.substateName + ": newState}"+
+			  ");"+
                           "return msg;";
 
         var functionText = "var results = null;"+
