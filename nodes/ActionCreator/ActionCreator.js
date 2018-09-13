@@ -11,10 +11,10 @@ module.exports = function(RED){
         if (config.dataSource === '') {
             msg.action = action;
         } else {
-          if (msg[config.dataSource] === undefined) {
+          if (msg.payload[config.dataSource] === undefined) {
             node.error('Message object did not contain field specified in Data Source field');
           } else {
-            action[config.dataSource] = msg[config.dataSource];
+            action[config.dataSource] = msg.payload[config.dataSource];
             msg.action = action;
           }
         }
